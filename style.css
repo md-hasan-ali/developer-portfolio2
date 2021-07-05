@@ -1,0 +1,279 @@
+/** Common Css **/
+* {
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0;
+    padding:0;
+    font-family: 'Fira Code', monospace;
+}
+.half-width {
+    width:50%;
+    padding-left:4%;
+    padding-right: 4%;
+}
+.flexible-content {
+    display: flex;
+    align-items: center;
+}
+h1 {
+    font-size: 55px;
+}
+h2 {
+    font-size:40px;
+}
+h3 {
+    font-size: 30px;
+}
+p {
+    padding-bottom:20px;
+}
+.orange {
+    color:#fa583c
+}
+.container {
+    max-width: 1180px;
+    margin:0 auto;
+}
+
+
+/** Header-Area **/
+
+.header-area {
+    background: #000;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.header-area h1 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.header-area h2 {
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+.header-area h3 {
+    margin:15px 0;
+} 
+.link-button {
+    text-decoration: none;
+    padding: 10px 30px;
+    background: linear-gradient(tomato,salmon);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.header-area img {
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    width:90%;
+}
+.img-center {
+    text-align: center;
+}
+
+/** About-Area **/ 
+.about-area {
+    padding:80px 0;
+}
+.about-left {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.about-right {
+    width: 40%;
+}
+
+.about-right img {
+    width: 90%;
+    -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    border-radius: 150px;
+    margin-top:40px;
+}
+
+/** Exp-area **/
+
+section.exp-area {
+    background: #F6F6F6;
+    padding: 80px 0;
+}
+
+.exp-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.exp-title h2 {
+    color: tomato;
+    margin: 20px 0;
+}
+
+.exp-title p {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.exp-item {
+    width: 23%;
+    display: inline-block;
+    padding: 70px 0;
+    padding-left: 16px;
+    text-align:center;
+}
+.box1 {
+    background: #10C6FC;
+}
+.box2 {
+    background: #835AEB;
+}
+.box3 {
+    background: #002453;
+}
+.box4 {
+    background: #FF2B4A;
+}
+.exp-item i {
+    color: #fff;
+    font-size: 60px;
+}
+
+.exp-item h4 {
+    color: #fff;
+    font-size: 25px;
+}
+
+
+/** Education area **/
+
+section.education-area {
+    background-image: url(images/hasan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 80px 0;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.education-grid-item {
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 30px;
+}
+
+.education-grid-item h2 {
+    font-size: 35px;
+}
+
+.education-details h3 {
+    font-size: 25px;
+}
+
+.education-details h4 {
+    color: #FF2B4A;
+}
+
+
+/** Work Area **/
+section.work-area {
+    padding: 80px 0;
+}
+.portfolio-menu {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.portfolio-menu button {
+    border: none;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.work-grid-item img {
+    width: 100%;
+    height: 250px;
+}
+
+.work-grid-item:nth-child(5) {
+    grid-column: 1/3;
+}
+button.mixitup-control-active {
+    background-color: #FF2B4A;
+}
+
+
+/** Contact Area **/
+section.contact-area {
+    background: url(images/hasan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 80px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.contact-grid-item {
+    background: rgba(0,0,0,0.8);
+    padding: 25px;
+    color: #fff;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"], form  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid gray;
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    color:#fff;
+    font-size: 18px;
+}
+input.link-button {
+    outline:none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/** footer area **/
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color:#000;
+}
+footer p {
+    margin: 0;
+    padding:0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
